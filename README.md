@@ -1,1 +1,3 @@
 # EulerMejoradoColaborativo
+
+adiel es gay
