@@ -1,87 +1,38 @@
 //arantza y benjamin se van a casar <3
+#include<stdio.h>
+#include<string.h>
+#include<stdio.h>
 #include <iostream>
 #include <cmath>
+#include "iostream"
+#include<stdlib.h>
+#include <iostream>
+#include <cmath>
+// Función que define la EDO dy/dx = f(x, y)
+double f(double x, double y) 
+{
+    return (2*(x * y)); // Cambia esta función por la EDO que quieras resolver
+}
+// Método de Euler mejorado
+void eulerMejorado(double x0, double y0, double h, double x_target) {
+    double x = x0;
+    double y = y0;
 
-// Clase base para las ecuaciones diferenciales
-class EcuacionDiferencial {
-public:
-    virtual double funcion(double x, double y) const = 0;
-};
+    while (x < x_target) {
+        double y_pred = y + h * f(x, y); // Predictor
+        double y_corr = y + h * ((f(x, y) + f(x, y_pred))/2); // Corrector
 
-// Clase para la ecuación específica: y' = x^2 + y^2
-class EcuacionEjemplo : public EcuacionDiferencial {
-public:
-    double funcion(double x, double y) const override {
-        return pow(x, 2) + pow(y, 2);
+        x += h;
+        y = y_pred;//----
+
+        std::cout << "x = " << x << ", y = " << y << std::endl;
     }
-};
-
-// Clase para el método de Euler mejorado
-class EulerMejorado {
-public:
-    double resolver(const EcuacionDiferencial& ecuacion, double x0, double y0, double h, int iteraciones) {
-        double x = x0;
-        double y = y0;
-
-        for (int i = 0; i < iteraciones; ++i) {
-            double y_pred = y + h * ecuacion.funcion(x, y);
-            double y_next = y + h * (ecuacion.funcion(x, y) + ecuacion.funcion(x + h, y_pred)) / 2.0;
-            x += h;
-            y = y_next;
-        }
-
-        return y;
-    }
-};
-
-// Clase para el menú
-class Menu {
-public:
-    void mostrarMenu() {
-        std::cout << "Seleccione la ecuacion a resolver:" << std::endl;
-        std::cout << "1. y' = x^2 + y^2" << std::endl;
-        std::cout << "Seleccione una opcion: ";
-    }
-
-    void ejecutar() {
-        int opcion;
-        double x0, y0, h;
-        int iteraciones;
-
-        mostrarMenu();
-        std::cin >> opcion;
-
-        switch (opcion) {
-            case 1:
-                {
-                    EcuacionEjemplo ecuacion;
-                    EulerMejorado euler;
-
-                    std::cout << "Ingrese el valor inicial de x: ";
-                    std::cin >> x0;
-
-                    std::cout << "Ingrese el valor inicial de y: ";
-                    std::cin >> y0;
-
-                    std::cout << "Ingrese el tamaño de paso h: ";
-                    std::cin >> h;
-
-                    std::cout << "Ingrese el numero de iteraciones: ";
-                    std::cin >> iteraciones;
-
-                    double resultado = euler.resolver(ecuacion, x0, y0, h, iteraciones);
-                    std::cout << "El resultado es: " << resultado << std::endl;
-                    break;
-                }
-            default:
-                std::cout << "Opcion no valida. Saliendo del programa." << std::endl;
-                break;
-        }
-    }
-};
-
+}
 int main() {
-    Menu menu;
-    menu.ejecutar();
+    double x0 = 0; // Valor inicial de x
+    double y0 = 1.0; // Valor inicial de y
+    double h = 0.1; // Tamaño del paso
+    double x_target = .3; // Valor de x en el que se quiere encontrar y
+    eulerMejorado(x0, y0, h, x_target);
     return 0;
 }
