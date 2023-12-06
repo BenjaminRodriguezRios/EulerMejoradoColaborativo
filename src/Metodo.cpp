@@ -1,4 +1,4 @@
-//arantza y benjamin se aman 
+
 #include <iostream>
 #include <cmath>
 class DatosUsuario {
@@ -38,7 +38,7 @@ public:
 class EulerMejorado : public MetodoNumerico {
 public:
     double funcion(double x, double y) override {
-        return x * x + y;
+        return 2*(x * y);
     }
 
     double eulerMejorado(double x0, double y0, double h, int num_pasos) override {
