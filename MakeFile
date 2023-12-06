@@ -1,6 +1,4 @@
 
-
-
 bin/Metodo : src/Metodo.cpp
 	g++ $< -o $@ $(SDL) -Iinclude
 
@@ -8,3 +6,4 @@ bin/Metodo : src/Metodo.cpp
 run : bin/Metodo
 	./bin/Metodo
 
+..
