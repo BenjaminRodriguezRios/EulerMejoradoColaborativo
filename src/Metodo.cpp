@@ -1,4 +1,4 @@
-//arantza y benjamin se aman 
+
 #include <iostream>
 #include <cmath>
 class DatosUsuario {
@@ -67,6 +67,7 @@ public:
     void ejecutar() {
         int opcion;
         EulerMejorado euler;
+
 
         do {
             mostrarMenu();
