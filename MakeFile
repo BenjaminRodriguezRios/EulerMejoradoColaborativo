@@ -6,8 +6,8 @@ FLAGS = -w -Wl,-subsystem,windows
 SDL = $(INCLUDE_PATH) $(LIB_PATH) $(FLAGS) $(LIBS)
 
 
-bin/eulermejorado : src/EulerMejorado.cpp
+bin/Metodo : src/Metodo.cpp
 	g++ $< -o $@
 
-run : bin/eulermejorado
-	./bin/eulermejorado
+run : bin/Metodo
+	./bin/Metodo
