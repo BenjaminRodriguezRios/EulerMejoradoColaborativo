@@ -11,5 +11,3 @@ bin/eulermejorado : src/EulerMejorado.cpp
 
 runEM : bin/eulermejorado
 	./bin/eulermejorado
-
-	
