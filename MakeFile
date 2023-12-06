@@ -1,14 +1,5 @@
-INCLUDE_PATH = -IC:\msys64\mingw64\include\SDL2
-LIB_PATH = -LC:\msys64\mingw64\lib
-LIBS = -lmingw32 -lSDL2main -lSDL2
-FLAGS = -w -Wl,-subsystem,windows
+bin/Metodo 	:	src/Metodo.cpp	include/*.hpp
+	c++ src/Metodo.cpp -o bin/Metodo -I include -l curses
 
-SDL = $(INCLUDE_PATH) $(LIB_PATH) $(FLAGS) $(LIBS)
-
-
-bin/Metodo : src/Metodo.cpp
-	g++ $< -o $@ $(SDL)
-
-
-run : bin/Metodo
+run	:	bin/Metodo
 	./bin/Metodo
