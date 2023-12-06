@@ -7,7 +7,7 @@ SDL = $(INCLUDE_PATH) $(LIB_PATH) $(FLAGS) $(LIBS)
 
 
 bin/eulermejorado : src/EulerMejorado.cpp
-	g++ $< -o $@ $(SDL)
+	g++ $< -o $@
 
-runEM : bin/eulermejorado
+run : bin/eulermejorado
 	./bin/eulermejorado
