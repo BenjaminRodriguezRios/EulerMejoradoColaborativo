@@ -1,8 +1,11 @@
 # EulerMejoradoColaborativo
 
-<<<<<<< HEAD
-adiel es gay
-=======
-adiel se la come
->>>>>>> 470275c (Adiel se la come)
-benja es joto
+# Contra
+
+
+![](/images/menu.png)
+
+## Descripcion
+
+![](/out/docs/Diagrama/Diagrama.png)
+
