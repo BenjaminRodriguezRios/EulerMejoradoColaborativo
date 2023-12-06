@@ -1,5 +1,15 @@
-bin/Metodo 	:	src/Metodo.cpp	include/*.hpp
-	c++ src/Metodo.cpp -o bin/Metodo -I include -l curses
+INCLUDE_PATH = -IC:\msys64\mingw64\include\SDL2
+LIB_PATH = -LC:\msys64\mingw64\lib
+LIBS = -lmingw32 -lSDL2main -lSDL2
+FLAGS = -w -Wl,-subsystem,windows
 
-run	:	bin/Metodo
+SDL = $(INCLUDE_PATH) $(LIB_PATH) $(FLAGS) $(LIBS)
+
+
+bin/Metodo : src/Metodo.cpp
+	g++ $< -o $@ $(SDL)
+
+
+runEM : bin/Metodo
 	./bin/Metodo
+
