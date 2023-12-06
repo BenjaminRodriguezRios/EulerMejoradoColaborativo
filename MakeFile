@@ -6,4 +6,3 @@ bin/Metodo : src/Metodo.cpp
 run : bin/Metodo
 	./bin/Metodo
 
-..
