@@ -11,3 +11,23 @@ bin/eulermejorado : src/EulerMejorado.cpp
 
 run : bin/eulermejorado
 	./bin/eulermejorado
+<<<<<<< HEAD
+=======
+=======
+bin/Metodo : src/Metodo.cpp
+	g++ $< -o $@ $(SDL)
+
+<<<<<<< HEAD
+runEM : bin/Metodo
+	./bin/Metodo
+<<<<<<< HEAD
+>>>>>>> 90fe227 (benja.)
+=======
+=======
+runE : bin/EulerMejorado
+	./bin/EulerMejorado
+
+	
+>>>>>>> 2af12d4 (.)
+>>>>>>> b333fcc (.)
+>>>>>>> 3030915 (.)
