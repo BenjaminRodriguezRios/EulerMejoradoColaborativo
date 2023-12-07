@@ -11,6 +11,8 @@ Antonio Lopez 22310253
 Este programa es capaz de resolver derivadas con el metodo de euler mejorado de una forma sencilla. solucionar derivadas a mano, es cosa del pasado!!
 
 ## Manual
+iNGRESE SU ECUACION EN LA CLASE EULERMEJORADO EN LA LINEA 10
+.
 Comience corriendo el programa..
 
 Una vez ejecutado, el programa le preguntara si desea salir o realizar los calculos. Si desea realizar un calculo ingrese 1, si desea salir ingrese 2.
