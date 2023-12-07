@@ -1,9 +1,14 @@
 # Euler Mejorado Colaborativo
 Bienvenido a la calculadora que usa el metodo de Euler mejorado, donde tus sueños son hechos realidad!! :D
 
-Realizado por 
+Realizado por:
+
+Benjamin Rodrigues 22310233
+
+Antonio Lopez 22310253
+
 ## Descripcion
-Este programa es capas de resolver derivadas con el metodo de euler mejorado de una forma sencilla y no pierda el tiempo solunionando derivadas a mano, es cosa del pasado!!
+Este programa es capaz de resolver derivadas con el metodo de euler mejorado de una forma sencilla. solucionar derivadas a mano, es cosa del pasado!!
 
 ## Manual
 Comience corriendo el programa..
@@ -19,8 +24,14 @@ Finalmente le solicitara su H y numero de pasos, ingreselos y de enter.
 FELICIDADES!! tienes la respuesta :DDD.
 
 
-![](/images/captura.png)
+![](/images/menu.png)
+
 
 ## Diagrama:
 ![](/out/docs/Diagrama/Diagrama.png)
 
+
+## Agradecimientos
+Queremos agradecer al profesor por ayudarnos a comprender mejor la programacion en torno a objetos, pues aprendimos mas de lo que hemos visto en toda la carrera, esperamos encontrarnos nuevamente, ADIOS PUERK :)
+
+![](/images/uwu.avif)

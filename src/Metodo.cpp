@@ -5,7 +5,7 @@
 #include <Metodo.hpp>
 #include <EulerMejorado.hpp>
 #include <Menu.hpp>
-int main() 
+int main()
 {
     Menu menu;
     menu.ejecutar();

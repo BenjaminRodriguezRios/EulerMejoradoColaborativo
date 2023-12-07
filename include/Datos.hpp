@@ -4,7 +4,8 @@ class Dato
 private:
     /* data */
 public:
-    static void ingresarDatos(double& x0, double& y0, double& h, int& num_pasos) {
+    static void ingresarDatos(double &x0, double &y0, double &h, int &num_pasos)
+    {
         std::cout << "Ingrese x0: ";
         std::cin >> x0;
         std::cout << "Ingrese y0: ";
