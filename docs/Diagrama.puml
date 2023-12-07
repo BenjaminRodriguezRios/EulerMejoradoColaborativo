@@ -4,7 +4,7 @@ class EulerMejorado
 class Menu 
 class Metodo 
 class Validacion 
-//
+
 EulerMejorado -* Menu
 EulerMejorado -o Metodo
 EulerMejorado -|> Metodo
