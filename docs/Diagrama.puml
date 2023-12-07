@@ -10,3 +10,4 @@ EulerMejorado -o Metodo
 EulerMejorado -|> Metodo
 Menu -o Datos
 Validacion -o Datos
+@enduml
