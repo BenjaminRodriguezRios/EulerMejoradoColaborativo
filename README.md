@@ -21,6 +21,6 @@ FELICIDADES!! tienes la respuesta :DDD.
 
 ![](/images/captura.png)
 
-
+## Diagrama:
 ![](/out/docs/Diagrama/Diagrama.png)
 
